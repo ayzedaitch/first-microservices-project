@@ -1,0 +1,6 @@
+spring:
+  config:
+    import: optional:configserver:http://localhost:8888
+# we specify optional so if the configs in the config server is not available the application won't fail to start
+  application:
+    name: discovery

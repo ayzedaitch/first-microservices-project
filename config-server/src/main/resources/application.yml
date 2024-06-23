@@ -1,0 +1,12 @@
+server:
+  port: 8888
+spring:
+  profiles:
+    active: native # means that the configs are stored locally in the config server
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/configurations
